@@ -137,13 +137,20 @@ VALUES
 -- Consultar prescrições cadastradas
 SELECT * FROM Prescricao;
 
+USE HospitalDB;
+GO
 
--- ============================================================
+SELECT
+    TABLE_NAME AS NomeTabela
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_TYPE = 'BASE TABLE'
+ORDER BY TABLE_NAME;
+
 -- PROJETO: SISTEMA HOSPITALAR
 -- Banco de Dados: HospitalDB
 -- SGBD: Microsoft SQL Server 2022
 -- Ambiente: macOS + Docker + Visual Studio Code
--- ============================================================
+
 --
 -- RESUMO DO QUE FOI FEITO
 --
