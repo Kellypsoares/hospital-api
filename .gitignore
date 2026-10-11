@@ -1,0 +1,15 @@
+
+# Ambiente virtual do Python
+.venv/
+venv/
+
+# Arquivos que podem conter senhas
+.env
+.env.*
+
+# Arquivos temporarios do Python
+__pycache__/
+*.pyc
+
+# Arquivos gerados pelo macOS
+.DS_Store
